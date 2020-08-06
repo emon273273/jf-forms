@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="text-success text-center">Form validation in javascript</h1>
+
+        <div class="col-lg-8 m-auto d-block">
+<form action="#" onsubmit=" return validation()" class="bg-light">
+
+<div class="form-group">
+    <label for=""> username</label>
+    <input type="text" name="username" placeholder="name" class="form-control" id="user" autocomplete="off">
+    <span id="userspan" class="text-danger"></span>
+
+</div>
+<div class="form-group">
+    <label for=""> password</label>
+    <input type="text" name="password" placeholder="password" class="form-control" id="password" autocomplete="off">
+    <span id="spanpass" class="text-danger"></span>
+
+</div>
+
+<div class="form-group">
+    <label for=""> confirm password</label>
+    <input type="text" name="confirm-password" placeholder="confirm" class="form-control" id="cpassword" autocomplete="off">
+    <span id="cspan" class="text-danger"></span>
+
+</div>
+
+
+<div class="form-group">
+    <label for=""> mobile number</label>
+    <input type="number" name="mobile" placeholder="mobile" class="form-control" id="mobile" autocomplete="off">
+    <span id="mspan" class="text-danger"></span>
+</div>
+
+
+<div class="form-group">
+    <label for=""> Email</label>
+    <input type="text" name="email" placeholder="email" class="form-control" id="email" autocomplete="off">
+    <span id="espan" class="text-danger"></span>
+</div>
+
+<input type="submit" name="submit" value="submit" class="btn btn-success">
+
+</form>
+
+
+        </div>
+    </div>
+
+    <script src="/form/script.js"></script>
+</body>
+</html>
